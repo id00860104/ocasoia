@@ -288,21 +288,6 @@ button:hover {
     background-color: #2980b9;
 }
 
-.user-message {
-    background-color: #1c1c39;
-    color: #f3e6a2;
-    padding: 7px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-.agent-message {
-    background-color: #1c1c39;
-    color: #f3e6a2;
-    padding: 7px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-}
-
 .circle-btn {
   width: 50px;
   height: 50px;
@@ -323,6 +308,23 @@ button:hover {
 .circle-btn:hover {
   background-color: #3e3d5c;
 }
+
+.user-message {
+    background-color: #1c1c39;
+    color: #f3e6a2;
+    padding: 7px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.agent-message {
+    background-color: #1c1c39;
+    color: #f3e6a2;
+    padding: 7px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+
 
 /*
 body {
