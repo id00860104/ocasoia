@@ -1,53 +1,80 @@
-const formModal = document.getElementById("formModal");
-const showModal = document.getElementById("showModal");
-const overlay = document.getElementById("overlay");
-const dataContainer = document.getElementById("dataContainer");
-let personas = [];
+document.addEventListener('DOMContentLoaded', function() {
+    const addPersonBtn = document.getElementById('addPersonBtn');
+    const viewPeopleBtn = document.getElementById('viewPeopleBtn');
+    const addPersonModal = document.getElementById('addPersonModal');
+    const viewPeopleModal = document.getElementById('viewPeopleModal');
+    const savePersonBtn = document.getElementById('savePersonBtn');
+    const peopleList = document.getElementById('peopleList');
+    const closeButtons = document.querySelectorAll('.close-button');
 
-function openFormModal() {
-  overlay.style.display = "block";
-  formModal.style.display = "block";
-}
+    let people = [];
 
-function openShowModal() {
-  overlay.style.display = "block";
-  showModal.style.display = "block";
-  mostrarPersonas();
-}
+    // Función para mostrar la ventana modal
+    function showModal(modal) {
+        modal.style.display = "block";
+    }
 
-function cerrarModales() {
-  overlay.style.display = "none";
-  formModal.style.display = "none";
-  showModal.style.display = "none";
-}
+    // Función para ocultar la ventana modal
+    function hideModal(modal) {
+        modal.style.display = "none";
+    }
 
-overlay.addEventListener("click", cerrarModales);
+    // Evento para abrir la ventana modal de añadir persona
+    addPersonBtn.addEventListener('click', function() {
+        showModal(addPersonModal);
+    });
 
-function guardarRecordatorio() {
-  const nombre = document.getElementById("nombre").value.trim();
-  const apellido = document.getElementById("apellido").value.trim();
-  if (nombre && apellido) {
-    personas.push({ nombre, apellido });
-    document.getElementById("nombre").value = "";
-    document.getElementById("apellido").value = "";
-    cerrarModales();
-  } else {
-    alert("Por favor, complete ambos campos.");
-  }
-}
+    // Evento para abrir la ventana modal de ver personas
+    viewPeopleBtn.addEventListener('click', function() {
+        updatePeopleList();
+        showModal(viewPeopleModal);
+    });
 
-function mostrarRecordatorios() {
-  dataContainer.innerHTML = "";
-  personas.forEach((p, index) => {
-    const div = document.createElement("div");
-    div.className = "saved-item";
-    div.textContent = `${p.nombre} ${p.apellido}`;
-    div.onclick = () => {
-      if (confirm(`¿Eliminar a ${p.nombre} ${p.apellido}?`)) {
-        personas.splice(index, 1);
-        mostrarRecordatorios();
-      }
-    };
-    dataContainer.appendChild(div);
-  });
-}
+    // Eventos para cerrar las ventanas modales
+    closeButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            hideModal(button.closest('.modal'));
+        });
+    });
+
+    // Evento para guardar la persona
+    savePersonBtn.addEventListener('click', function() {
+        const name = document.getElementById('name').value;
+        const lastName = document.getElementById('lastName').value;
+
+        if (name && lastName) {
+            people.push({ name: name, lastName: lastName });
+            document.getElementById('name').value = '';
+            document.getElementById('lastName').value = '';
+            hideModal(addPersonModal);
+        } else {
+            alert('Por favor, complete todos los campos.');
+        }
+    });
+
+    // Función para actualizar la lista de personas en la ventana modal
+    function updatePeopleList() {
+        peopleList.innerHTML = '';
+        people.forEach(function(person, index) {
+            const listItem = document.createElement('li');
+            listItem.textContent = `${person.name} ${person.lastName}`;
+            listItem.addEventListener('click', function() {
+                removePerson(index);
+            });
+            peopleList.appendChild(listItem);
+        });
+    }
+
+    // Función para eliminar una persona
+    function removePerson(index) {
+        people.splice(index, 1);
+        updatePeopleList();
+    }
+
+    // Cerrar la ventana modal si se hace clic fuera del contenido
+    window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('modal')) {
+            hideModal(event.target);
+        }
+    });
+});
