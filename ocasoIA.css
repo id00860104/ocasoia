@@ -272,7 +272,7 @@ button:hover {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 40px
+    font-size: 40px;
 }
 
 .chat-input button:hover {
