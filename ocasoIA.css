@@ -63,6 +63,14 @@ body {
   align-items: center;
   margin-top: 2rem;
 }
+.options-grid-salud {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
 
 .card {
   height: 250px;
