@@ -1,39 +1,144 @@
 
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OcasolA</title>
-  <link rel="stylesheet" href="ocasoIA.css"/>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alfonso Crego y Robert Andrada">
+    <meta name="description" content="Aplicación de accesibilidad para adultos mayores, con herramientas que faciliten la realización de trámites y el acceso a servicios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OcasoIA</title>
+    <link rel="stylesheet" href="ocasoIA.css">
+    <link rel="shortcut icon" href="OcasoIA2.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <ul>
-        <li class="active">Inicio</li>
-        <li>Salud</li>
-        <li>Trámites</li>
-        <li>Pagos en Línea</li>
-        <li>Asistente</li>
-        <li>Configuración</li>
-      </ul>
-      <button class="sos-button">SOS</button>
-    </nav>
-  </header>
+    <header data-header>
+        <div class="overlay" data-overlay></div>
 
-  <main>
-    <h1>Bienvenido a OcasolA</h1>
-    <p>¿Qué podemos hacer por usted?</p>
+        <div class="container">
+            <a href="#" class="logo"><img src="OcasoIA2.png" alt="OcasoIA Logo" width="80" height="80"></a>
 
-    <div class="card-container">
-      <div class="card dark">Salud</div>
-      <div class="card light">Trámites</div>
-      <div class="card light">Pagos en Línea</div>
-      <div class="card dark">Asistente</div>
-    </div>
-  </main>
+            <button class="nav-open-btn" data-nav-open-btn><ion-icon name="menu-outline"></ion-icon></button>
+
+            <nav class="navbar" data-navbar>
+                <button class="nav-close-btn" data-nav-close-btn><ion-icon name="close-outline"></ion-icon></button>
+
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="#home" class="navbar-link">Inicio</a></li>
+                    <li class="navbar-item"><a href="#service" class="navbar-link">Servicios</a></li>
+                    <li class="navbar-item"><a href="#about" class="navbar-link">Nosotros</a></li>
+                    <li class="navbar-item"><a href="#features" class="navbar-link">Características</a></li>
+                    <li class="navbar-item"><a href="#faq" class="navbar-link">FAQ's</a></li>
+                </ul>
+
+                <button class="btn btn-primary">Comenzar</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article>
+            <section class="hero" id="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="h1 hero-title">OcasoIA: Accesibilidad y facilidad para adultos mayores</h1>
+
+                        <form action="" class="hero-form">
+                            <input type="text" name="name" placeholder="Ingresa tu nombre" required class="input-field">
+                            <input type="email" name="email" placeholder="Ingresa tu correo" required class="input-field">
+
+                            <button type="submit" class="btn btn-primary">Comenzar Ahora</button>
+                        </form>
+
+                        <p class="hero-text">
+                            <span>Prueba gratuita de 14 días</span>
+                            <span>Soporte exclusivo</span>
+                            <span>Sin costos ocultos</span>
+                        </p>
+                    </div>
+
+                    <figure class="hero-banner">
+                        <img src="abueloyrobotguay.webp" alt="Ilustración de OcasoIA">
+                    </figure>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo"><img src="OcasoIA2.png" alt="OcasoIA Logo" width="100" height="100"></a>
+
+                    <p class="section-text">OcasoIA es una plataforma diseñada para facilitar la vida de los adultos mayores, ofreciendo herramientas accesibles y fáciles de usar.</p>
+                </div>
+
+                <div class="footer-link-box">
+                    <ul class="footer-list">
+                        <li><p class="h4">Compañía</p></li>
+
+                        <li><a href="#" class="footer-link">Sobre nosotros</a></li>
+                        <li><a href="#" class="footer-link">Carreras</a></li>
+                        <li><a href="#" class="footer-link">Prensa y medios</a></li>
+                        <li><a href="#" class="footer-link">Contáctanos</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li><p class="h4">Descubre</p></li>
+
+                        <li><a href="#" class="footer-link">Nuestro blog</a></li>
+                        <li><a href="#" class="footer-link">Publicidad</a></li>
+                        <li><a href="#" class="footer-link">Planes y precios</a></li>
+                        <li><a href="#" class="footer-link">Testimonios</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li><p class="h4">Legal</p></li>
+
+                        <li><a href="#" class="footer-link">Términos de uso</a></li>
+                        <li><a href="#" class="footer-link">Política de privacidad</a></li>
+                        <li><a href="#" class="footer-link">Política de cookies</a></li>
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li><p class="h4">Soporte</p></li>
+
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Ayuda del editor</a></li>
+                        <li><a href="#" class="footer-link">Comunidad</a></li>
+                        <li><a href="#" class="footer-link">Chat en vivo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">&copy; 2024 <a href="#">OcasoIA</a>. Todos los derechos reservados</p>
+
+                <ul class="social-list">
+                    <li><a href="#" class="social-link">Github</a></li>
+                    <li><a href="#" class="social-link">Twitter</a></li>
+                    <li><a href="#" class="social-link">Instagram</a></li>
+                    <li><a href="#" class="social-link">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#top" class="go-top-btn active" data-go-top><ion-icon name="arrow-up-outline"></ion-icon></a>
+
+    <script src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
 
