@@ -285,6 +285,13 @@ button:hover {
     margin-bottom: 5px;
     border-radius: 5px;
 }
+.agent-message {
+    background-color: #f0f0f0; /* Un color gris claro */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
 
 /*
 body {
