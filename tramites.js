@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-'use strict';
+//'use strict';
 
 const elemToggleFunc = function(elem){ elem.classList.toggle('active'); }
 
