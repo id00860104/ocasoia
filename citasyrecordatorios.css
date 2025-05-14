@@ -1,3 +1,33 @@
+
+
+/* Barra de navegación */
+.navbar {
+  background-color: #1c1c39;
+  color: white;
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links .active {
+  font-weight: bold;
+}
+
+.sos-button {
+  background-color: red;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
