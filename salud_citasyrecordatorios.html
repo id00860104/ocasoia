@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OcasoIA - Salud citas y recordatorios</title>
-  <link rel="stylesheet" href="ocasoIA.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Personas</title>
+    <link rel="stylesheet" href="citasyrecordatorios.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Gestión de Personas</h1>
 
-  <h1>Citas y recordatorios</h1>
-  <button class="button add-btn" onclick="openFormModal()">Añadir recordatorio</button>
-  <button class="button delete-btn" onclick="openShowModal()">Eliminar recordatorio</button>
+        <button id="addPersonBtn">Añadir Persona</button>
+        <button id="viewPeopleBtn">Ver Personas</button>
 
-  <!-- Formulario Modal -->
-  <div class="overlay" id="overlay"></div>
-  <div class="modal" id="formModal">
-    <h2>Agregar Información</h2>
-    <input type="text" id="titulo" placeholder="Título" />
-    <input type="text" id="fecha" placeholder="Fecha" />
-    <button onclick="guardarRecordatorio()">Guardar</button>
-  </div>
+        <!-- Ventana modal para añadir persona -->
+        <div id="addPersonModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Añadir Persona</h2>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="lastName">Apellido:</label>
+                <input type="text" id="lastName" name="lastName"><br><br>
+                <button id="savePersonBtn">Guardar</button>
+            </div>
+        </div>
 
-  <!-- Mostrar Datos Modal -->
-  <div class="modal" id="showModal">
-    <h2>Recordatorios guardados</h2>
-    <div id="dataContainer" class="saved-data"></div>
-  </div>
+        <!-- Ventana modal para ver personas -->
+        <div id="viewPeopleModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Lista de Personas</h2>
+                <ul id="peopleList">
+                    <!-- Aquí se mostrarán las personas -->
+                </ul>
+            </div>
+        </div>
+    </div>
 
-  <script src="citasyrecordatorios.js"></script>
+    <script src="citasyrecordatorios.js"></script>
 </body>
 </html>
 
