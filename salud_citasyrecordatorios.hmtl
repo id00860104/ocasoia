@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OcasoIA - Salud citas y recordatorios</title>
+  <link rel="stylesheet" href="ocasoIA.css">
+</head>
+<body>
+
+  <h1>Citas y recordatorios</h1>
+  <button class="button add-btn" onclick="openFormModal()">Añadir recordatorio</button>
+  <button class="button delete-btn" onclick="openShowModal()">Eliminar recordatorio</button>
+
+  <!-- Formulario Modal -->
+  <div class="overlay" id="overlay"></div>
+  <div class="modal" id="formModal">
+    <h2>Agregar Información</h2>
+    <input type="text" id="nombre" placeholder="Nombre" />
+    <input type="text" id="apellido" placeholder="Primer Apellido" />
+    <button onclick="guardarPersona()">Guardar</button>
+  </div>
+
+  <!-- Mostrar Datos Modal -->
+  <div class="modal" id="showModal">
+    <h2>Personas Guardadas</h2>
+    <div id="dataContainer" class="saved-data"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
