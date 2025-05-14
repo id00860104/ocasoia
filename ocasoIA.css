@@ -1,4 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f8f8;
+}
+
+header {
+  background-color: #1f1f38;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  color: #f0e3a1;
+  cursor: pointer;
+}
+
+.navbar li.active {
+  font-weight: bold;
+  color: white;
+}
+
+.sos-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.card {
+  padding: 40px 20px;
+  font-size: 1.8em;
+  font-weight: bold;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card.dark {
+  background-color: #1f1f38;
+  color: #f0e3a1;
+}
+
+.card.light {
+  background-color: #f0e3a1;
+  color: #1f1f38;
+}
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
 
 :root {
 
@@ -507,3 +602,5 @@ header {
 
     .go-top-btn { bottom: 30px; right: 30px; width: 50px; height: 50px; }
 }
+
+*/
