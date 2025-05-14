@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Añade el mensaje precargado al cargar la página
-    addMessageToChatLog("Soy su asistente IA de Trámites, ¿qué necesita?", false); // El segundo argumento indica que no es un mensaje del usuario
+    addMessageToChatLog("Soy su asistente IA de Trámites, ¿qué necesita?", true); // El segundo argumento indica que no es un mensaje del usuario
 
 
 
