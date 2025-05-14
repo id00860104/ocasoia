@@ -3,6 +3,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const sendButton = document.getElementById('sendButton');
     const chatLog = document.getElementById('chatLog');
 
+// Función para añadir un mensaje al registro de chat
+    function addMessageToChatLog(message, isUserMessage) {
+        const messageElement = document.createElement('div');
+        messageElement.textContent = message;
+
+        if (isUserMessage) {
+            messageElement.classList.add('user-message');
+        } else {
+            messageElement.classList.add('agent-message'); // Añade una clase para los mensajes del agente
+        }
+
+        chatLog.appendChild(messageElement);
+        chatLog.scrollTop = chatLog.scrollHeight; // Hace scroll hacia abajo
+    }
+
+    // Añade el mensaje precargado al cargar la página
+    addMessageToChatLog("Soy su asistente IA de Trámites, ¿qué necesita?", false); // El segundo argumento indica que no es un mensaje del usuario
+
+
+
+    
+
     sendButton.addEventListener('click', function() {
         const message = userInput.value;
         if (message) {
