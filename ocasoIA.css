@@ -270,8 +270,9 @@ button:hover {
     color: #1c1c39;
     padding: 5px 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
+    font-size: 40px
 }
 
 .chat-input button:hover {
@@ -286,9 +287,10 @@ button:hover {
     border-radius: 5px;
 }
 .agent-message {
-    background-color: #f0f0f0; /* Un color gris claro */
-    padding: 10px;
-    margin-bottom: 10px;
+    background-color: #1c1c39;
+    color: #f3e6a2;
+    padding: 7px;
+    margin-bottom: 5px;
     border-radius: 5px;
 }
 
