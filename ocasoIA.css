@@ -303,6 +303,26 @@ button:hover {
     border-radius: 5px;
 }
 
+.circle-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: #2d2c49;
+  color: #f3e6a9;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.2s;
+}
+
+.circle-btn:hover {
+  background-color: #3e3d5c;
+}
 
 /*
 body {
