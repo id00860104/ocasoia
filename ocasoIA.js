@@ -34,7 +34,7 @@ window.addEventListener('scroll', function() {
 })
 
 
-
+/* CITAS Y RECORDATORIOS */
 document.addEventListener('DOMContentLoaded', function() {
     const addPersonBtn = document.getElementById('addPersonBtn');
     const viewPeopleBtn = document.getElementById('viewPeopleBtn');
