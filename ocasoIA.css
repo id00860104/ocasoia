@@ -1,8 +1,108 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #111;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #1c1c39;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links .active {
+  font-weight: bold;
+}
+
+.sos-button {
+  background-color: red;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+}
+
+/* Contenido principal */
+.main-content {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.main-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card.dark {
+  background-color: #1c1c39;
+  color: #f3e6a2;
+}
+
+.card.light {
+  background-color: #f3e6a2;
+  color: #1c1c39;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -94,6 +194,25 @@ p {
   background-color: #f0e3a1;
   color: #1f1f38;
 }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
