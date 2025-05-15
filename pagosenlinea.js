@@ -20,6 +20,16 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem(localStorageKey, JSON.stringify(pagos));
     }
 
+
+    function showCustomNotification(message) {
+        notification.textContent = message;
+        notification.style.display = 'block';
+        // Reinicia la animación para que se reproduzca cada vez
+        notification.style.animation = 'none';
+        notification.offsetHeight; // Truco para reiniciar la animación
+        notification.style.animation = 'slideIn 0.5s forwards, slideOut 0.5s 4s forwards';
+    }
+
     // Inicializa los pagos desde el LocalStorage
     let pagos = getPagos();
 
