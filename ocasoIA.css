@@ -240,6 +240,30 @@ button:hover {
 }
 
 
+/* PAGOS EN LÍNEA */
+
+/* Utiliza cosas ya declaradas en la sección anterior, de citas y recordatorios */
+
+/* Estilos para la lista de recordatorios */
+#pagoList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#pagoList li {
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    background-color: #171726;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#pagoList li:hover {
+    background-color: #08080D;
+}
+
+
 /* TRÁMITES */
 .chat-container {
     width: 80%;
