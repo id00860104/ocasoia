@@ -1,23 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página 2: Mostrar Datos</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OcasoIA - Inicio</title>
+  <link rel="stylesheet" href="ocasoIA.css" />
 </head>
 <body>
-    <div class="container">
+  <header class="navbar">
+    <div class="logo">OcasoIA</div>
+    <nav class="nav-links">
+      <a href="index.html">Inicio</a>
+      <a href="salud_inicio.html" class="active">Salud</a>
+      <a href="tramites.html">Trámites</a>
+      <a href="pagosenlinea.html">Pagos en Línea</a>
+      <a href="asistente_contactado.html">Asistente</a>
+      <a href="configuracion.html">Configuración</a>
+      <a href="SOS.html" class="sos-button">SOS</a>
+    </nav>
+  </header>
+
+  <div class="container">
         <h1>Datos Ingresados</h1>
         <div id="dataDisplay">
             <p><strong>Nombre:</strong> <span id="displayNombre"></span></p>
             <p><strong>Apellido:</strong> <span id="displayApellido"></span></p>
             <p><strong>Email:</strong> <span id="displayEmail"></span></p>
-            <p><strong>Mensaje:</strong> <span id="displayMensaje"></span></p>
         </div>
         <a href="index.html">Volver al Formulario</a>
-    </div>
-    <script src="display.js"></script>
+   </div>
+   <script src="historial.js"></script>
 </body>
 </html>
+
+
