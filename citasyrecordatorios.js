@@ -7,11 +7,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const recordatorioList = document.getElementById('recordatorioList');
     const closeButtons = document.querySelectorAll('.close-button');
 
-  
-    
-    let recordatorios = [];
+    const localStorageKey = 'recordatorios'; // Clave para almacenar en LocalStorage
 
-    
+    // Función para obtener los recordatorios del LocalStorage
+    function getRecordatorios() {
+        const storedRecordatorios = localStorage.getItem(localStorageKey);
+        return storedRecordatorios ? JSON.parse(storedRecordatorios) : [];
+    }
+
+    // Función para guardar los recordatorios en el LocalStorage
+    function saveRecordatorios(recordatorios) {
+        localStorage.setItem(localStorageKey, JSON.stringify(recordatorios));
+    }
+
+    // Inicializa los recordatorios desde el LocalStorage
+    let recordatorios = getRecordatorios();
+
     // Función para mostrar la ventana modal
     function showModal(modal) {
         modal.style.display = "block";
@@ -47,9 +58,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (name && lastName) {
             recordatorios.push({ name: name, lastName: lastName });
+            saveRecordatorios(recordatorios); // Guarda en LocalStorage
             document.getElementById('name').value = '';
             document.getElementById('lastName').value = '';
             hideModal(addRecordatorioModal);
+            updateRecordatorioList(); // Actualiza la lista después de guardar
         } else {
             alert('Por favor, complete todos los campos.');
         }
@@ -71,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función para eliminar un recordatorio
     function removeRecordatorio(index) {
         recordatorios.splice(index, 1);
-        
+        saveRecordatorios(recordatorios); // Guarda en LocalStorage
         updateRecordatorioList();
     }
 
@@ -82,7 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    
+    // Actualiza la lista de recordatorios al cargar la página
+    updateRecordatorioList();
 });
 
 
