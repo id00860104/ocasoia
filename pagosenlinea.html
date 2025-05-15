@@ -19,8 +19,39 @@
       <a href="SOS.html" class="sos-button">SOS</a>
     </nav>
   </header>
+    
+    <div class="container">
+        <h1 id="tit_pagosenlinea">Pagos en Línea</h1>
 
-  <main class="main-content">
-  </main>
+        <button id="addPagoBtn">Añadir destinatario</button>
+        <button id="viewPagoBtn">Eliminar destinatario</button>
+
+        <!-- Ventana modal para añadir persona -->
+        <div id="addPagoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2 id="tit_nuevopago">Nuevo pago</h2>
+                <label for="name">Destinatario:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="lastName">Nº cuenta destinatario:</label>
+                <input type="text" id="lastName" name="lastName"><br><br>
+                <button id="savePagoBtn">Guardar</button>
+            </div>
+        </div>
+
+        <!-- Ventana modal para ver destinatarios de los pagos -->
+        <div id="viewPagoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <h2>Lista de destinatarios</h2>
+                <ul id="pagoList">
+                    <!-- Aquí se mostrarán los destinatarios -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="pagosenlinea.js"></script>
 </body>
 </html>
