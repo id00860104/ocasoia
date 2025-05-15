@@ -318,8 +318,8 @@ button:hover {
 }
 
 .chat-input button {
-    background-color: #1c1c39;
-    color: #f3e6a2;
+    background-color: #f3e6a2;
+    color: #1c1c39;
     padding: 0;
     border: none;
     border-radius: 50%;
@@ -331,7 +331,7 @@ button:hover {
     justify-content: center;
     display: flex;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s;
+    transition: background-color 0.2s ease;
 }
 
 .chat-input button:hover {
