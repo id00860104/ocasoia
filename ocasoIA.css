@@ -215,7 +215,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* Estilos para la lista de personas */
+/* Estilos para la lista de recordatorios */
 #recordatorioList {
     list-style-type: none;
     padding: 0;
