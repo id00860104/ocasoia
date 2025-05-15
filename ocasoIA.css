@@ -395,6 +395,15 @@ textarea {
 textarea {
     height: 100px;
 }
+#dataDisplay{
+    text-align: left;
+    color: #24263D;
+    font-size:30px;
+}
+
+#tit_historial{
+    color: #24263D;
+}
 
 /* MISCELÁNEA */
 label {
