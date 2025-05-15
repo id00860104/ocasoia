@@ -23,6 +23,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializa los recordatorios desde el LocalStorage
     let recordatorios = getRecordatorios();
 
+
+    function showCustomNotification(message) {
+        notification.textContent = message;
+        notification.style.display = 'block';
+        // Reinicia la animación para que se reproduzca cada vez
+        notification.style.animation = 'none';
+        notification.offsetHeight; // Truco para reiniciar la animación
+        notification.style.animation = 'slideIn 0.5s forwards, slideOut 0.5s 3s forwards';
+    }
+
     // Función para mostrar la ventana modal
     function showModal(modal) {
         modal.style.display = "block";
@@ -63,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('lastName').value = '';
             hideModal(addRecordatorioModal);
             updateRecordatorioList(); // Actualiza la lista después de guardar
+            showCustomNotification('¡Recordatorio añadido!'); // Mostrar notificación
         } else {
             alert('Por favor, complete todos los campos.');
         }
@@ -86,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         recordatorios.splice(index, 1);
         saveRecordatorios(recordatorios); // Guarda en LocalStorage
         updateRecordatorioList();
+        showCustomNotification('¡Recordatorio eliminado!'); // Mostrar notificación
     }
 
     // Cerrar la ventana modal si se hace clic fuera del contenido
