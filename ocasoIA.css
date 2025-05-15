@@ -360,16 +360,6 @@ button:hover {
 
 /* CONFIGURACIÓN */
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
 
 .container_configuracion {
     width: 80%;
