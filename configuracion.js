@@ -5,23 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
 
         // Captura los valores de los campos
-        const nombre = document.getElementById('nombre').value;
-        const apellido = document.getElementById('apellido').value;
-        const email = document.getElementById('email').value;
+        const nsocial = document.getElementById('nsocial').value;
+        const operaciones = document.getElementById('operaciones').value;
+        const alergias = document.getElementById('alergias').value;
         
 
         // Crea un objeto con los datos
         const formData = {
-            nombre: nombre,
-            apellido: apellido,
-            email: email,
+            nsocial: nsocial,
+            operaciones: operaciones,
+            alergias: alergias,
             
         };
 
         // Guarda los datos en LocalStorage
         localStorage.setItem('formData', JSON.stringify(formData));
 
-        // Redirige a la segunda página
-        window.location.href = 'display.html';
+        // Redirige a la página del historial clínico
+        window.location.href = 'salud_historial.html';
     });
 });
