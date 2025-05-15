@@ -7,8 +7,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const recordatorioList = document.getElementById('recordatorioList');
     const closeButtons = document.querySelectorAll('.close-button');
 
+    // Función para obtener los recordatorios del localStorage
+    function getRecordatorioFromStorage() {
+        const storedRecordatorio = localStorage.getItem('recordatorios');
+        return storedRecordatorio ? JSON.parse(storedRecordatorio) : [];
+    }
+
+    // Función para guardar los recordatorios en el localStorage
+    function saveRecordatorioToStorage(recordatorios) {
+        localStorage.setItem('recordatorios', JSON.stringify(recordatorios));
+    }
+
+    
     let recordatorios = [];
 
+    
     // Función para mostrar la ventana modal
     function showModal(modal) {
         modal.style.display = "block";
@@ -44,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (name && lastName) {
             recordatorios.push({ name: name, lastName: lastName });
+            saveRecordatorioToStorage(recordatorios);
             document.getElementById('name').value = '';
             document.getElementById('lastName').value = '';
             hideModal(addRecordatorioModal);
@@ -68,6 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Función para eliminar un recordatorio
     function removeRecordatorio(index) {
         recordatorios.splice(index, 1);
+        saveRecordatorioToStorage(recordatorios);
         updateRecordatorioList();
     }
 
@@ -77,6 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
             hideModal(event.target);
         }
     });
+
+    updateRecordatorioList();
 });
 
 
