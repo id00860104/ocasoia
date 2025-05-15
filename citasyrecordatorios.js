@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const addPersonBtn = document.getElementById('addPersonBtn');
-    const viewPeopleBtn = document.getElementById('viewPeopleBtn');
-    const addPersonModal = document.getElementById('addPersonModal');
-    const viewPeopleModal = document.getElementById('viewPeopleModal');
-    const savePersonBtn = document.getElementById('savePersonBtn');
-    const peopleList = document.getElementById('peopleList');
+    const addRecordatorioBtn = document.getElementById('addRecordatorioBtn');
+    const viewRecordatorioBtn = document.getElementById('viewRecordatorioBtn');
+    const addRecordatorioModal = document.getElementById('addRecordatorioModal');
+    const viewRecordatorioModal = document.getElementById('viewRecordatorioModal');
+    const saveRecordatorioBtn = document.getElementById('saveRecordatorioBtn');
+    const recordatorioList = document.getElementById('recordatorioList');
     const closeButtons = document.querySelectorAll('.close-button');
 
-    let people = [];
+    let recordatorios = [];
 
     // Función para mostrar la ventana modal
     function showModal(modal) {
@@ -20,14 +20,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Evento para abrir la ventana modal de añadir persona
-    addPersonBtn.addEventListener('click', function() {
-        showModal(addPersonModal);
+    addRecordatorioBtn.addEventListener('click', function() {
+        showModal(addRecordatorioModal);
     });
 
     // Evento para abrir la ventana modal de ver personas
-    viewPeopleBtn.addEventListener('click', function() {
-        updatePeopleList();
-        showModal(viewPeopleModal);
+    viewRecordatorioBtn.addEventListener('click', function() {
+        updateRecordatorioList();
+        showModal(viewRecordatorioModal);
     });
 
     // Eventos para cerrar las ventanas modales
@@ -38,37 +38,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Evento para guardar la persona
-    savePersonBtn.addEventListener('click', function() {
+    saveRecordatorioBtn.addEventListener('click', function() {
         const name = document.getElementById('name').value;
         const lastName = document.getElementById('lastName').value;
 
         if (name && lastName) {
-            people.push({ name: name, lastName: lastName });
+            recordatorios.push({ name: name, lastName: lastName });
             document.getElementById('name').value = '';
             document.getElementById('lastName').value = '';
-            hideModal(addPersonModal);
+            hideModal(addRecordatorioModal);
         } else {
             alert('Por favor, complete todos los campos.');
         }
     });
 
     // Función para actualizar la lista de personas en la ventana modal
-    function updatePeopleList() {
-        peopleList.innerHTML = '';
-        people.forEach(function(person, index) {
+    function updateRecordatorioList() {
+        recordatorioList.innerHTML = '';
+        recordatorios.forEach(function(recordatorio, index) {
             const listItem = document.createElement('li');
-            listItem.textContent = `${person.name} ${person.lastName}`;
+            listItem.textContent = `${recordatorio.name} ${recordatorio.lastName}`;
             listItem.addEventListener('click', function() {
-                removePerson(index);
+                removeRecordatorio(index);
             });
             peopleList.appendChild(listItem);
         });
     }
 
-    // Función para eliminar una persona
-    function removePerson(index) {
+    // Función para eliminar un recordatorio
+    function removeRecordatorio(index) {
         people.splice(index, 1);
-        updatePeopleList();
+        updateRecordatorioList();
     }
 
     // Cerrar la ventana modal si se hace clic fuera del contenido
