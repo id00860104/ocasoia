@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Reinicia la animación para que se reproduzca cada vez
         notification.style.animation = 'none';
         notification.offsetHeight; // Truco para reiniciar la animación
-        notification.style.animation = 'slideIn 0.5s forwards, slideOut 0.5s 3s forwards';
+        notification.style.animation = 'slideIn 0.5s forwards, slideOut 0.5s 4s forwards';
     }
 
     // Función para mostrar la ventana modal
