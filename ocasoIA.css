@@ -388,7 +388,7 @@ textarea {
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 50px;
     box-sizing: border-box; /* Para que el padding no aumente el tamaño del elemento */
 }
 
