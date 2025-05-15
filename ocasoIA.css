@@ -395,15 +395,30 @@ textarea {
 textarea {
     height: 100px;
 }
+
 #dataDisplay{
     text-align: left;
     color: #24263D;
     font-size:30px;
+    
 }
+
+
 
 #tit_historial{
     color: #24263D;
 }
+
+#displayAlergias{
+    padding:185.5px;
+}
+#displayOperaciones{
+    padding:122px;
+}
+#displayNsocial{
+    padding:19.5px;
+}
+
 
 /* MISCELÁNEA */
 label {
