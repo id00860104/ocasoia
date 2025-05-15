@@ -23,28 +23,28 @@
     <div class="container">
         <h1>Gestión de Personas</h1>
 
-        <button id="addPersonBtn">Añadir Persona</button>
-        <button id="viewPeopleBtn">Ver Personas</button>
+        <button id="addRecordatorioBtn">Añadir recordatorio</button>
+        <button id="viewRecordatorioBtn">Eliminar recordatorio</button>
 
         <!-- Ventana modal para añadir persona -->
-        <div id="addPersonModal" class="modal">
+        <div id="addRecordatorioModal" class="modal">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
-                <h2>Añadir Persona</h2>
-                <label for="name">Nombre:</label>
+                <h2 id="tit_nuevorecordatorio">Nuevo recordatorio</h2>
+                <label for="name">Título:</label>
                 <input type="text" id="name" name="name"><br><br>
-                <label for="lastName">Apellido:</label>
+                <label for="lastName">Fecha:</label>
                 <input type="text" id="lastName" name="lastName"><br><br>
-                <button id="savePersonBtn">Guardar</button>
+                <button id="saveRecordatorioBtn">Guardar</button>
             </div>
         </div>
 
         <!-- Ventana modal para ver personas -->
-        <div id="viewPeopleModal" class="modal">
+        <div id="viewRecordatorioModal" class="modal">
             <div class="modal-content">
                 <span class="close-button">&times;</span>
-                <h2>Lista de Personas</h2>
-                <ul id="peopleList">
+                <h2>Lista de recordatorios</h2>
+                <ul id="recordatorioList">
                     <!-- Aquí se mostrarán las personas -->
                 </ul>
             </div>
