@@ -169,18 +169,22 @@ h1 {
 }
 
 button {
-    font-size: 2.5em;
+    font-size: 2em;
     padding: 20px 30px;
-    background-color: #24263D;
-    color: #EEDB96;
+    background-color: #EEDB96;
+    color: #24263D;
     margin: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
 }
 
+#tit_nuevorecordatorio{
+  margin-bottom: 20px;
+}
+
 button:hover {
-    background-color: #08080D;
+    background-color: #B59A17;
 }
 
 /* Estilos para la ventana modal */
