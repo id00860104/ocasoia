@@ -11,6 +11,13 @@ body {
   color: #111;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+
 /* Barra de navegación */
 .navbar {
   background-color: #24263D;
