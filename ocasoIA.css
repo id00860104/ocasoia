@@ -285,7 +285,8 @@ button:hover {
 }
 
 .chat-input button i{
-    background-color: #2980b9;
+    font-size: 1.2em;
+    display: block; /* Añade esta línea */
 }
 
 .circle-btn {
