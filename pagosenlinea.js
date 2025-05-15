@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('lastName').value = '';
             hideModal(addPagoModal);
             updatePagoList(); // Actualiza la lista después de guardar
+            showCustomNotification('¡Destinatario de pago añadido!'); // Mostrar notificación
         } else {
             alert('Por favor, complete todos los campos.');
         }
@@ -96,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         pagos.splice(index, 1);
         savePagos(pagos); // Guarda en LocalStorage
         updatePagoList();
+        showCustomNotification('¡Destinatario de pago eliminado!'); // Mostrar notificación
     }
 
     // Cerrar la ventana modal si se hace clic fuera del contenido
