@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
 
         // Limpia el LocalStorage después de mostrar los datos (opcional)
-        localStorage.removeItem('formData');
+        //localStorage.removeItem('formData');
     } else {
         // Si no hay datos en LocalStorage, muestra un mensaje
         document.getElementById('dataDisplay').innerHTML = '<p>No hay datos disponibles.</p>';
