@@ -27,8 +27,10 @@ body {
     width:60px;
 }
 .logo span {
-    font-size: 1.2em; /* Ajusta el tamaño del texto según tus necesidades */
+    font-size: 2.5em; /* Ajusta el tamaño del texto según tus necesidades */
     font-weight: bold; /* Establece el texto en negrita */
+    color:white;
+    
 }
 
 .nav-links a {
