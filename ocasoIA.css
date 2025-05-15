@@ -21,10 +21,7 @@ body {
   align-items: center;
 }
 
-.nav-logo {
-    height: 50px; 
-    margin-right: 20px; /* Espacio entre el logo y los enlaces */
-}
+
 
 .nav-links a {
   color: #EEDB96;
