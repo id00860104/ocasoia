@@ -243,7 +243,9 @@ button:hover {
 /* PAGOS EN LÍNEA */
 
 /* Utiliza cosas ya declaradas en la sección anterior, de citas y recordatorios */
-
+#tit_nuevopago{
+  margin-bottom: 20px;
+}
 /* Estilos para la lista de recordatorios */
 #pagoList {
     list-style-type: none;
