@@ -17,6 +17,11 @@ body {
     padding: 0 20px;
 }
 
+.logo-ocasoia {
+    height: 40px; /* Ajusta la altura según tus necesidades */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+}
+
 
 /* Barra de navegación */
 .navbar {
