@@ -13,8 +13,8 @@ body {
 
 /* Barra de navegación */
 .navbar {
-  background-color: #1c1c39;
-  color: white;
+  background-color: #24263D;
+  color: #EEDB96;
   padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -22,8 +22,8 @@ body {
 }
 
 .nav-links a {
-  color: white;
-  margin-left: 1rem;
+  color: #EEDB96;
+  margin-left: 2rem;
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -35,8 +35,9 @@ body {
 .sos-button {
   background-color: red;
   color: white;
-  padding: 0.3rem 0.8rem;
-  border-radius: 4px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Contenido principal */
@@ -178,6 +179,7 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 #tit_nuevorecordatorio{
@@ -218,6 +220,7 @@ button:hover {
     right: 0;
     padding: 14px;
     cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Estilos para la lista de recordatorios */
@@ -309,6 +312,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     display: flex;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .chat-input button:hover {
@@ -390,6 +394,7 @@ textarea {
     border: 1px solid #ddd;
     border-radius: 50px;
     box-sizing: border-box; /* Para que el padding no aumente el tamaño del elemento */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 textarea {
@@ -431,15 +436,16 @@ label {
 /* Estilos para la notificación */
 .notification {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
-    background-color: #4CAF50;
+    background-color: #24263D;
     color: white;
     padding: 15px 30px;
-    border-radius: 5px;
+    border-radius: 50px;
     display: none; /* Oculta la notificación por defecto */
     z-index: 1000;
     animation: slideIn 0.5s forwards, slideOut 0.5s 4s forwards; /* Animación */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes slideIn {
