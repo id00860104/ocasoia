@@ -19,12 +19,12 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.style.display = "none";
     }
 
-    // Evento para abrir la ventana modal de añadir persona
+    // Evento para abrir la ventana modal de añadir recordatorio
     addRecordatorioBtn.addEventListener('click', function() {
         showModal(addRecordatorioModal);
     });
 
-    // Evento para abrir la ventana modal de ver personas
+    // Evento para abrir la ventana modal de ver y eliminar recordatorios
     viewRecordatorioBtn.addEventListener('click', function() {
         updateRecordatorioList();
         showModal(viewRecordatorioModal);
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Evento para guardar la persona
+    // Evento para guardar el recordatorio
     saveRecordatorioBtn.addEventListener('click', function() {
         const name = document.getElementById('name').value;
         const lastName = document.getElementById('lastName').value;
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Función para actualizar la lista de personas en la ventana modal
+    // Función para actualizar la lista de recordatorios en la ventana modal
     function updateRecordatorioList() {
         recordatorioList.innerHTML = '';
         recordatorios.forEach(function(recordatorio, index) {
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             listItem.addEventListener('click', function() {
                 removeRecordatorio(index);
             });
-            peopleList.appendChild(listItem);
+            recordatorioList.appendChild(listItem);
         });
     }
 
