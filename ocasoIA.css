@@ -11,18 +11,6 @@ body {
   color: #111;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.logo-ocasoia {
-    height: 40px; /* Ajusta la altura según tus necesidades */
-    margin-right: 10px; /* Espacio entre la imagen y el texto */
-}
-
-
 /* Barra de navegación */
 .navbar {
   background-color: #24263D;
@@ -31,8 +19,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height:80px;
+    
 }
-
+.logo-ocasoia{
+    height:60px;
+    width:60px;
+}
 
 
 .nav-links a {
