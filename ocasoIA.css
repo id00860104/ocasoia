@@ -38,6 +38,7 @@ body {
   padding: 0.5rem 0.9rem;
   border-radius: 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s;
 }
 
 /* Contenido principal */
@@ -180,6 +181,7 @@ button {
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s;
 }
 
 #tit_nuevorecordatorio{
@@ -221,6 +223,11 @@ button:hover {
     padding: 14px;
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s;
+}
+
+.close-button:hover{
+    background-color: black;
 }
 
 /* Estilos para la lista de recordatorios */
@@ -273,7 +280,7 @@ button:hover {
 .chat-container {
     width: 80%;
     max-width: 1500px;
-    background-color: #1c1c39;
+    background-color: #fefefe;
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -283,12 +290,14 @@ button:hover {
     padding: 20px;
     height: 400px;
     overflow-y: scroll;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .chat-input {
     display: flex;
     padding: 10px;
     border-top: 1px solid #ddd;
+    
 }
 
 .chat-input input {
@@ -300,8 +309,8 @@ button:hover {
 }
 
 .chat-input button {
-    background-color: #f3e6a2;
-    color: #1c1c39;
+    background-color: #1c1c39;
+    color: #f3e6a2;
     padding: 0;
     border: none;
     border-radius: 50%;
@@ -313,6 +322,7 @@ button:hover {
     justify-content: center;
     display: flex;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s;
 }
 
 .chat-input button:hover {
@@ -346,16 +356,16 @@ button:hover {
 }
 
 .user-message {
-    background-color: #1c1c39;
-    color: #f3e6a2;
+    background-color: #f3e6a2;
+    color: #1c1c39;
     padding: 7px;
     margin-bottom: 5px;
     border-radius: 5px;
     text-align: left;
 }
 .agent-message {
-    background-color: #1c1c39;
-    color: #f3e6a2;
+    background-color: #f3e6a2;
+    color: #1c1c39;
     padding: 7px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -395,6 +405,7 @@ textarea {
     border-radius: 50px;
     box-sizing: border-box; /* Para que el padding no aumente el tamaño del elemento */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    
 }
 
 textarea {
@@ -414,15 +425,7 @@ textarea {
     color: #24263D;
 }
 
-#displayAlergias{
-    padding:185.5px;
-}
-#displayOperaciones{
-    padding:122px;
-}
-#displayNsocial{
-    padding:19.5px;
-}
+
 
 
 /* MISCELÁNEA */
