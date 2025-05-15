@@ -6,9 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const formData = JSON.parse(storedData);
 
         // Muestra los datos en los elementos correspondientes
-        document.getElementById('displayNombre').textContent = formData.nombre;
-        document.getElementById('displayApellido').textContent = formData.apellido;
-        document.getElementById('displayEmail').textContent = formData.email;
+        document.getElementById('displayNsocial').textContent = formData.nsocial;
+        document.getElementById('displayOperaciones').textContent = formData.operaciones;
+        document.getElementById('displayAlergias').textContent = formData.alergias;
         
 
         // Limpia el LocalStorage después de mostrar los datos (opcional)
