@@ -25,7 +25,12 @@ body {
   color: #EEDB96;
   margin-left: 2rem;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
+  transition: background-color 0.2s;
+}
+
+.nav-links a:hover{
+    color: #C19E1F;
 }
 
 .nav-links .active {
@@ -40,6 +45,10 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.2s;
 }
+.sos-button:hover {
+  background-color: #8F0002;
+}
+
 
 /* Contenido principal */
 .main-content {
@@ -94,13 +103,13 @@ body {
 }
 
 .card.dark {
-  background-color: #1c1c39;
-  color: #f3e6a2;
+  background-color: #f3e6a2;
+  color: #24263D;
 }
 
 .card.light {
-  background-color: #f3e6a2;
-  color: #1c1c39;
+  background-color: #24263D;
+  color: #f3e6a2;
 }
 
 /* ASISTENTE CONTACTADO */
