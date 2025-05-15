@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para eliminar un recordatorio
     function removeRecordatorio(index) {
-        people.splice(index, 1);
+        recordatorios.splice(index, 1);
         updateRecordatorioList();
     }
 
