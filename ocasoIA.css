@@ -216,12 +216,12 @@ button:hover {
 }
 
 /* Estilos para la lista de personas */
-#peopleList {
+#recordatorioList {
     list-style-type: none;
     padding: 0;
 }
 
-#peopleList li {
+#recordatorioList li {
     padding: 15px;
     margin-top: 25px;
     margin-bottom: 15px;
@@ -230,7 +230,7 @@ button:hover {
     cursor: pointer;
 }
 
-#peopleList li:hover {
+#recordatorioList li:hover {
     background-color: #08080D;
 }
 
