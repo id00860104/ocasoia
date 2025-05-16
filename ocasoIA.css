@@ -248,7 +248,7 @@ button:hover {
 }
 
 .close-button:hover{
-    background-color: black;
+    background-color: #841F21;
 }
 
 /* Estilos para la lista de recordatorios */
@@ -382,7 +382,8 @@ button:hover {
     padding: 7px;
     margin-bottom: 5px;
     border-radius: 5px;
-    text-align: left;
+    text-align: right;
+    display: inline-block;
 }
 .agent-message {
     background-color: #f3e6a2;
@@ -391,6 +392,7 @@ button:hover {
     margin-bottom: 5px;
     border-radius: 5px;
     text-align: left;
+    display: inline-block;
 }
 
 /* CONFIGURACIÓN */
