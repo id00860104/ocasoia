@@ -491,3 +491,16 @@ label {
     }
 }
 
+h2{
+    text-align: center;
+    color: #EEDB96;
+    padding:2px;
+    font-size:30px;
+}
+h3{
+    text-align: center;
+    color: #EEDB96;
+    padding:2px;
+    font-size:18px;
+    
+}
