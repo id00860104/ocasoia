@@ -383,7 +383,7 @@ button:hover {
     margin-bottom: 5px;
     border-radius: 5px;
     text-align: right;
-    
+    font-size:22px;
     
 }
 .agent-message {
@@ -393,6 +393,7 @@ button:hover {
     margin-bottom: 5px;
     border-radius: 5px;
     text-align: left;
+    font-size:22px;
     
 }
 
