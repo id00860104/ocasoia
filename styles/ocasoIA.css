@@ -11,6 +11,15 @@ body {
   color: #111;
 }
 
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+}
 /* Barra de navegación */
 .navbar {
   background-color: #24263D;
