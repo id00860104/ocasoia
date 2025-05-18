@@ -239,24 +239,24 @@ button:hover {
 
 /* Estilos para la ventana modal */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
 }
 
 .modal-content {
     background-color: #24263D;
     color: #EEDB96;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 25px;
     border: 5px solid #EEDB96;
-    width: 50%; /* Could be more or less, depending on screen size */
+    width: 50%; 
     position: relative;
 }
 
@@ -275,7 +275,7 @@ button:hover {
     background-color: #841F21;
 }
 
-/* Estilos para la lista de recordatorios */
+/
 #recordatorioList {
     list-style-type: none;
     padding: 0;
@@ -285,7 +285,7 @@ button:hover {
     padding: 15px;
     margin-top: 25px;
     margin-bottom: 15px;
-    background-color: #171726;
+    background-color: #24263D;
     border: 1px solid #ddd;
     cursor: pointer;
 }
@@ -311,7 +311,7 @@ button:hover {
     padding: 15px;
     margin-top: 25px;
     margin-bottom: 15px;
-    background-color: #171726;
+    background-color: #24263D;
     border: 1px solid #ddd;
     cursor: pointer;
 }
@@ -354,8 +354,8 @@ button:hover {
 }
 
 .chat-input button {
-    background-color: #f3e6a2;
-    color: #1c1c39;
+    background-color: #EEDB96;
+    color: #24263D;
     padding: 0;
     border: none;
     border-radius: 50%;
@@ -376,7 +376,7 @@ button:hover {
 
 .chat-input button i{
     font-size: 1.2em;
-    display: block; /* Añade esta línea */
+    display: block; 
 }
 
 .circle-btn {
@@ -384,8 +384,8 @@ button:hover {
   height: 50px;
   border-radius: 50%;
   font-size: 2rem;
-  background-color: #2d2c49;
-  color: #f3e6a9;
+  background-color: #24263D;
+  color: #EEDB96;
   border: none;
   cursor: pointer;
   margin-left: 1rem;
@@ -401,8 +401,8 @@ button:hover {
 }
 
 .user-message {
-    background-color: #f3e6a2;
-    color: #1c1c39;
+    background-color: #EEDB96;
+    color: #24263D;
     padding: 7px;
     margin-bottom: 5px;
     border-radius: 5px;
@@ -411,8 +411,8 @@ button:hover {
     
 }
 .agent-message {
-    background-color: #f3e6a2;
-    color: #1c1c39;
+    background-color: #EEDB96;
+    color: #24263D;
     padding: 7px;
     margin-bottom: 5px;
     border-radius: 5px;
