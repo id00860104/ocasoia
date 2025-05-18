@@ -20,6 +20,15 @@ body {
     flex-direction: column;
   }
 }
+.item {
+  flex: 1 1 100%; /* se adapta en móviles */
+}
+
+@media (min-width: 600px) {
+  .item {
+    flex: 1 1 45%; /* 2 columnas en tablets */
+}
+}
 /* Barra de navegación */
 .navbar {
   background-color: #24263D;
