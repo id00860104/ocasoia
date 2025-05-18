@@ -178,20 +178,21 @@ body {
 /* HISTORIAL */
 
 .card-configurar {
-  height: 150px;
-  width: 300px;  
+  height: 100px;
+  width: 200px;  
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3.3rem;
+  font-size: 2.0rem;
   font-weight: bold;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 10px;
   text-decoration: none;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease;
   background-color: #EEDB96;
   color: #24263D;
+  margin-top:60px;
 }
 
 .card-configurar:hover {
