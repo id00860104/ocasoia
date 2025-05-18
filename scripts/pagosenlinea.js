@@ -131,7 +131,7 @@ for(let i = 0; i < navElemArr.length; i++ ) {
     })
 }
 
-//Sticky Header
+
 
 const header = document.querySelector('[data-header]');
 
@@ -140,10 +140,3 @@ window.addEventListener('scroll', function(){
     } else { header.classList.remove('active'); }
 })
 
-// Go-top button vanishing
-
-const goTopBtn = document.querySelector('[data-go-top]');
-window.addEventListener('scroll', function() {
-    if(window.scrollY >= 800) { goTopBtn.classList.add('active'); }
-    else { goTopBtn.classList.remove('active'); }
-})
