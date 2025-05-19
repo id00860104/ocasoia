@@ -11,27 +11,26 @@ body {
   color: #111;
 }
 
-
-/* Barra de navegación */
+/* Estilos generales para todos los dispositivos */
 .navbar {
   background-color: #24263D;
   color: #EEDB96;
-  padding: 2rem 2rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height:80px;
-    
+  height: 80px;
 }
-.logo-ocasoia{
-    height:60px;
-    width:60px;
+
+.logo-ocasoia {
+  height: 60px;
+  width: 60px;
 }
+
 .logo span {
-    font-size: 2.5em; 
-    font-weight: bold; 
-    color:white;
-    
+  font-size: 2.5em;
+  font-weight: bold;
+  color: white;
 }
 
 .nav-links a {
@@ -42,8 +41,8 @@ body {
   transition: background-color 0.2s;
 }
 
-.nav-links a:hover{
-    color: #C19E1F;
+.nav-links a:hover {
+  color: #C19E1F;
 }
 
 .nav-links .active {
@@ -58,18 +57,17 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.2s;
 }
+
 .sos-button:hover {
   background-color: #8F0002;
 }
 
-
-/* Contenido principal */
 .main-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 80px); /* Deja espacio para la navbar */
+  min-height: calc(100vh - 80px);
   text-align: center;
   padding: 2rem;
 }
@@ -87,6 +85,7 @@ body {
   align-items: center;
   margin-top: 2rem;
 }
+
 .options-grid-salud {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -98,7 +97,7 @@ body {
 
 .card {
   height: 250px;
-  width: 600px;  
+  width: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,8 +123,6 @@ body {
   background-color: #EEDB96;
   color: #24263D;
 }
-
-/* ASISTENTE CONTACTADO */
 
 .llamada-contenido {
   display: flex;
@@ -157,8 +154,6 @@ body {
   background-color: #b71c1c;
 }
 
-/* SOS */
-
 .sos-contenido {
   display: flex;
   flex-direction: column;
@@ -173,14 +168,9 @@ body {
   margin-bottom: 2rem;
 }
 
-
-/* Usa el mismo botón de cancelar que Asistente */
-
-/* HISTORIAL */
-
 .card-configurar {
   height: 100px;
-  width: 200px;  
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -193,191 +183,178 @@ body {
   transition: transform 0.2s ease;
   background-color: #EEDB96;
   color: #24263D;
-  margin-top:60px;
+  margin-top: 60px;
 }
 
 .card-configurar:hover {
   transform: translateY(-5px);
 }
 
-
-
-/* CITAS Y RECORDATORIOS */
 .container {
-    width: 80%;
-    margin: auto;
-    padding: 60px;
-    text-align: center;
-    
+  width: 80%;
+  margin: auto;
+  padding: 60px;
+  text-align: center;
 }
 
 h1 {
-    text-align: center;
-    color: #333;
-    padding: 20px;
+  text-align: center;
+  color: #333;
+  padding: 20px;
 }
 
 button {
-    font-size: 2em;
-    padding: 20px 30px;
-    background-color: #EEDB96;
-    color: #24263D;
-    margin: 10px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.2s;
+  font-size: 2em;
+  padding: 20px 30px;
+  background-color: #EEDB96;
+  color: #24263D;
+  margin: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s;
 }
 
-#tit_nuevorecordatorio{
+#tit_nuevorecordatorio {
   margin-bottom: 20px;
 }
 
 button:hover {
-    background-color: #B59A17;
+  background-color: #B59A17;
 }
 
-/* Estilos para la ventana modal */
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgba(0,0,0,0.4); 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #24263D;
-    color: #EEDB96;
-    margin: 15% auto; 
-    padding: 25px;
-    border: 5px solid #EEDB96;
-    width: 50%; 
-    position: relative;
+  background-color: #24263D;
+  color: #EEDB96;
+  margin: 15% auto;
+  padding: 25px;
+  border: 5px solid #EEDB96;
+  width: 50%;
+  position: relative;
 }
 
 .close-button {
-    background-color: #DF7168;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 14px;
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.2s;
+  background-color: #DF7168;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 14px;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s;
 }
 
-.close-button:hover{
-    background-color: #841F21;
+.close-button:hover {
+  background-color: #841F21;
 }
 
-/
 #recordatorioList {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 #recordatorioList li {
-    padding: 15px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    background-color: #24263D;
-    border: 1px solid #ddd;
-    cursor: pointer;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: #24263D;
+  border: 1px solid #ddd;
+  cursor: pointer;
 }
 
 #recordatorioList li:hover {
-    background-color: #08080D;
+  background-color: #08080D;
 }
 
-
-/* PAGOS EN LÍNEA */
-
-/* Utiliza cosas ya declaradas en la sección anterior, de citas y recordatorios */
-#tit_nuevopago{
+#tit_nuevopago {
   margin-bottom: 20px;
 }
-/* Estilos para la lista de recordatorios */
+
 #pagoList {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 #pagoList li {
-    padding: 15px;
-    margin-top: 25px;
-    margin-bottom: 15px;
-    background-color: #24263D;
-    border: 1px solid #ddd;
-    cursor: pointer;
+  padding: 15px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  background-color: #24263D;
+  border: 1px solid #ddd;
+  cursor: pointer;
 }
 
 #pagoList li:hover {
-    background-color: #08080D;
+  background-color: #08080D;
 }
 
-
-/* TRÁMITES */
 .chat-container {
-    width: 80%;
-    max-width: 1500px;
-    background-color: #fefefe;
-    border-radius: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+  width: 80%;
+  max-width: 1500px;
+  background-color: #fefefe;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .chat-log {
-    padding: 20px;
-    height: 400px;
-    overflow-y: scroll;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 400px;
+  overflow-y: scroll;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .chat-input {
-    display: flex;
-    padding: 10px;
-    border-top: 1px solid #ddd;
-    
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
 }
 
 .chat-input input {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    border-radius: 40px;
-    margin-right:5px;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 40px;
+  margin-right: 5px;
 }
 
 .chat-input button {
-    background-color: #EEDB96;
-    color: #24263D;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 40px;
-    height: 50px;
-    width: 50px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.2s ease;
+  background-color: #EEDB96;
+  color: #24263D;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 40px;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
 }
 
 .chat-input button:hover {
-    background-color: #B59A17;
+  background-color: #B59A17;
 }
 
-.chat-input button i{
-    font-size: 1.2em;
-    display: block; 
+.chat-input button i {
+  font-size: 1.2em;
+  display: block;
 }
 
 .circle-btn {
@@ -393,7 +370,7 @@ button:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.2s;
 }
 
@@ -402,154 +379,427 @@ button:hover {
 }
 
 .user-message {
-    background-color: #EEDB96;
-    color: #24263D;
-    padding: 7px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    text-align: right;
-    font-size:22px;
-    
+  background-color: #EEDB96;
+  color: #24263D;
+  padding: 7px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: right;
+  font-size: 22px;
 }
+
 .agent-message {
-    background-color: #EEDB96;
-    color: #24263D;
-    padding: 7px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-    text-align: left;
-    font-size:22px;
-    
+  background-color: #EEDB96;
+  color: #24263D;
+  padding: 7px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-align: left;
+  font-size: 22px;
 }
-
-/* CONFIGURACIÓN */
-
 
 .container_configuracion {
-    width: 80%;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
 }
 
-.container_historial{
-    width: 80%;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
+.container_historial {
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
 }
-
 
 input[type="text"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    box-sizing: border-box; /* Para que el padding no aumente el tamaño del elemento */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 textarea {
-    height: 100px;
+  height: 100px;
 }
 
-#dataDisplay{
-    text-align: left;
-    color: #24263D;
-    font-size:30px;
-    
+#dataDisplay {
+  text-align: left;
+  color: #24263D;
+  font-size: 30px;
 }
 
-
-
-#tit_historial{
-    color: #24263D;
+#tit_historial {
+  color: #24263D;
 }
 
-
-
-
-/* MISCELÁNEA */
 label {
-    display: block;
-    margin-bottom: 5px;
-    text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
-
-/* Estilos para la notificación */
 .notification {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #24263D;
-    color: #EEDB96;
-    padding: 15px 30px;
-    border-radius: 50px;
-    display: none; /* Oculta la notificación por defecto */
-    z-index: 1000;
-    animation: slideIn 0.5s forwards, slideOut 0.5s 4s forwards; /* Animación */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #24263D;
+  color: #EEDB96;
+  padding: 15px 30px;
+  border-radius: 50px;
+  display: none;
+  z-index: 1000;
+  animation: slideIn 0.5s forwards, slideOut 0.5s 4s forwards;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes slideIn {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideOut {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(150%);
-        display: none; 
-    }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(150%);
+    display: none;
+  }
 }
 
-h2{
-    text-align: center;
-    color: #EEDB96;
-    padding:2px;
-    font-size:30px;
-}
-h3{
-    text-align: center;
-    color: #EEDB96;
-    padding:2px;
-    font-size:18px;
-    
+h2 {
+  text-align: center;
+  color: #EEDB96;
+  padding: 2px;
+  font-size: 30px;
 }
 
-
-h5{
-    font-size:40px;
-    margin-top: 70px;
-    margin-bottom:30px;
+h3 {
+  text-align: center;
+  color: #EEDB96;
+  padding: 2px;
+  font-size: 18px;
 }
 
-p5{
+h5 {
+  font-size: 40px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+p5 {
+  font-size: 20px;
+  padding: 20px;
+}
+
+p4 {
+  font-size: 34px;
+  padding: 20px;
+}
+
+p6 {
+  margin-top: 50px;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  /* Estilos para móviles */
+  .navbar {
+    padding: 1rem;
+    height: auto;
+    flex-direction: column; /* Apilar elementos verticalmente */
+  }
+
+  .logo-ocasoia {
+    height: 40px;
+    width: 40px;
+  }
+
+  .logo span {
+    font-size: 2em;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links a {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .main-content {
+    min-height: calc(100vh - 60px);
+    padding: 1rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .options-grid {
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
+    gap: 1rem;
+  }
+
+  .options-grid-salud {
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
+    gap: 1rem;
+  }
+
+  .card {
+    height: auto;
+    width: 90%;
+    max-width: none;
+    font-size: 2rem;
+  }
+
+  .llamada-texto {
+    font-size: 2rem;
+  }
+
+  .btn-cancelar {
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  .sos-texto {
+    font-size: 2rem;
+  }
+
+  .card-configurar {
+    height: auto;
+    width: 80%;
+    max-width: none;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  button {
+    font-size: 1.5em;
+    padding: 15px 20px;
+  }
+
+  .modal-content {
+    width: 90%;
+    margin: 20% auto;
+  }
+
+  .chat-container {
+    width: 90%;
+    border-radius: 30px;
+  }
+
+  .chat-log {
+    height: 300px;
+  }
+
+  .chat-input button {
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .chat-input button i {
+    font-size: 1em;
+  }
+
+  .circle-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .user-message {
+    font-size: 18px;
+  }
+
+  .agent-message {
+    font-size: 18px;
+  }
+
+  .container_configuracion {
+    width: 90%;
+  }
+
+  .container_historial {
+    width: 90%;
+  }
+
+  #dataDisplay {
     font-size: 20px;
-    padding:20px
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 30px;
+  }
+
+  p5 {
+    font-size: 16px;
+  }
+
+  p4 {
+    font-size: 24px;
+  }
 }
-p4{
-    font-size:34px;
-    padding:20px
-}
-p6{
-    margin-top:50px;
-    
-}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Estilos para tablets */
+  .navbar {
+    padding: 1.5rem;
+    height: auto;
+  }
+
+  .logo-ocasoia {
+    height: 50px;
+    width: 50px;
+  }
+
+  .logo span {
+    font-size: 2.2em;
+  }
+
+  .nav-links a {
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .main-content {
+    min-height: calc(100vh - 70px);
+    padding: 1.5rem;
+  }
+
+  .main-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .options-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .card {
+    height: 200px;
+    width: 400px;
+    font-size: 2.5rem;
+  }
+
+  .llamada-texto {
+    font-size: 2.5rem;
+  }
+
+  .btn-cancelar {
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+  }
+
+  .sos-texto {
+    font-size: 2.5rem;
+  }
+
+  .card-configurar {
+    height: 80px;
+    width: 160px;
+    font-size: 1.8rem;
+  }
+
+  .container {
+    width: 85%;
+    padding: 40px;
+  }
+
+  button {
+    font-size: 1.8em;
+    padding: 18px 25px;
+  }
+
+  .modal-content {
+    width: 70%;
+    margin: 20% auto;
+  }
+
+  .chat-container {
+    width: 85%;
+    border-radius: 40px;
+  }
+
+  .chat-log {
+    height: 350px;
+  }
+
+  .chat-input button {
+    font-size: 35px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .chat-input button i {
+    font-size: 1.1em;
+  }
+
+  .circle-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.8rem;
+  }
+
+  .user-message {
+    font-size: 20px;
+  }
+
+  .agent-message {
+    font-size: 20px;
+  }
+
+  .container_configuracion {
+    width: 85%;
+  }
+
+  .container_historial {
+    width: 85%;
+  }
+
+  #dataDisplay {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  h3 {
+    font-size: 17px;
+  }
+
+  h5 {
+ 
